@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="icon" type="image/png" href="/static/images/logo-clear.png" />
+
+  <title>Alex Trokel</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  {% include "nav.html" %}
+  <!-- End of Navigation Bar -->
+  <main>
+    <section class="about-me">
+      <img src="/static/images/logo-clear.png" alt="Headshot" class="headshot">
+      <div class="about-me-text">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae debitis perferendis nemo maxime fuga ut vel aliquid a, explicabo labore sint alias ipsam hic natus nostrum eveniet voluptates qui iure.</p>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora labore laborum debitis magni voluptate, temporibus sunt, eaque commodi tempore voluptas ipsa ipsum consequuntur est? Voluptatibus ad voluptas optio voluptate dolore </p>
+      </div>
+    </section>
+
+  </main>
+  <footer>&copy; 2024 Alex Trokel. All rights reserved.</footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

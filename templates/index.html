@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="icon" type="image/png" href="/static/images/logo-clear.png" />
+  <title>Alex Trokel</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  {% include "nav.html" %}
+  <!-- End of Navigation Bar -->
+  <main>
+    <section class="about-me">
+      <img src="/static/images/fancy-headshot.png" alt="Headshot" class="headshot">
+      <div class="about-me-text">
+        <p>I'm a young Software Engineer who is excited and hungry to enter the tech industry. My interests include (but
+          aren't limited to) Computer Networking, Game Design, and general backend work.</p>
+        <p>I believe the skills that I have cultivated from working at summer camp, being president of my fraternity,
+          and being involved with the sailing club at my school - have made me realize the importance of collaboration.
+        </p>
+      </div>
+    </section>
+    <section class="selected-projects">
+      <h2>Selected Projects</h2>
+      <div class="project-buttons">
+        <button class="project-button">Reliable Data Transfer (RDT)</button>
+        <div class="project-content">
+          <div class="project-text">
+            <h2>Computer Networks Course</h2>
+            <p><i>Fall 2021</i></p>
+            <ul>
+              <li>Working with a partner, we implemented the sending and receiving side of the RDT protocol</li>
+            </ul>
+          </div>
+        </div>
+        <button class="project-button">Rock Paper Scissors</button>
+        <div class="project-content">
+          <div class="project-text">
+            <h2>Computer Networks Course</h2>
+            <p><i>Fall 2021</i></p>
+            <ul>
+              <li>Working with a partner, we developed a command line rock, paper, scissors game that can be played
+                between two different people on two different machines</li>
+            </ul>
+          </div>
+        </div>
+        <button class="project-button">Sports Blog Website</button>
+        <div class="project-content">
+          <div class="project-text">
+            <h2>Web Development Course</h2>
+            <p><i>Fall 2021</i></p>
+            <ul>
+              <li>A semester long project that I tackled with a partner. We used technologies such as Flask along with
+                HTML and CSS. to develop a rudimentary sports blog website.</li>
+              <li>Some features include: making accounts/profiles, being able to write and post a blog post, and a
+                friend system.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work-experience">
+      <h2>Work Experience</h2>
+      <div class="work-buttons">
+        <button class="work-button">Teaching Assistant Roles</button>
+        <div class="work-content">
+          <div class="work-text">
+            <h2>Data Structures and Algorithms Course</h2>
+            <p><i>January 2022 - May 2022</i></p>
+            <ul>
+              <li>Held office hours twice a week to assist students with the course material</li>
+              <li>Coordinated with instructor and fellow TAs to ensure fair and efficient grading of projects and exams
+              </li>
+            </ul>
+            <h2>Computer Networks Course</h2>
+            <p><i>August 2022 - December 2022</i></p>
+            <ul>
+              <li>Provided weekly office hours, and tutoring, resulting in increased student proficiency in course
+                material</li>
+              <li>Using university software (Blackboard), graded homework, projects and exams</li>
+              <li>Created creative curriculum to assist professor in providing innovative assignments</li>
+            </ul>
+          </div>
+        </div>
+        <button class="work-button">Camp Mah-Kee-Nac</button>
+        <div class="work-content">
+          <div class="work-text">
+            <p><i>Summer 2017 - Summer 2019</i></p>
+            <ul>
+              <li>Supervised a bunk of 11 campers and guided them in their selection of daily activities</li>
+              <li>Taught sailing to campers aged 9 to 16 during the day</li>
+              <li>Supervised lakefront and pool as a certified lifeguard</li>
+              <li>Attended weekly meetings with my fellow counselors and camp administration</li>
+              <li>Participated in parent-camper conferences</li>
+            </ul>
+          </div>
+        </div>
+        <button class="work-button">Sigma Nu President [&Sigma;&Nu;]</button>
+        <div class="work-content">
+          <div class="work-text">
+            <p><i>February 2021 - January 2022</i></p>
+            <ul>
+              <li>Managed Rochester Chapter, providing organization, direction and strategy, utilized Robert's Rules of
+                Order</li>
+              <li>Provided project management to fraternity operations and board members</li>
+              <li>Coordinated with University of Rochester and national organization to ensure standards compliance</li>
+              <li>Created, organized and managed fundraising and campus events, leading to increased member
+                participation</li>
+              <li>Directed Sigma Nu's LEAD program, campus leadership program</li>
+            </ul>
+          </div>
+        </div>
+        <button class="work-button">Sailing Club @ Univ. of Rochester</button>
+        <div class="work-content">
+          <div class="work-text">
+            <h2>Business Manager</h2>
+            <p><i>August 2021 - December 2021</i></p>
+            <ul>
+              <li>Attended weekly meetings to help plan the future of the club</li>
+              <li>Organized events in coordination with university administration including securing funding</li>
+            </ul>
+            <h2>Vice-Commodore</h2>
+            <p><i>January 2022 - December 2022</i></p>
+            <ul>
+              <li>Attended weekly meetings to help plan the future of the club</li>
+              <li>Wrote a semesterly newsletter for alumni of the club</li>
+              <li>Ran practices to help hone the skills of the more advanced & teach new sailors</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>&copy; 2024 Alex Trokel. All rights reserved.</footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

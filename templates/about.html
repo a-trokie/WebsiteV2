@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/png" href="/static/images/logo-clear.png" />
+    <title>Alex Trokel</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  {% include "nav.html" %}
+  <!-- End of Navigation Bar -->
+
+    <main>
+        <section class="about-me">
+            <img src="/static/images/alex-hugh-min.png" alt="Headshot" class="headshot">
+            <div class="about-me-text">
+                <p>
+                    My name is Alex Trokel and I grew up in NYC. I attended Columbia
+                    Grammar and Preparatory school from Pre-K through the 12th grade.
+                </p>
+                <p>
+                    After 6th grade, I spent my summers at sleep away camp in Lenox,
+                    Massachusetts. Camp was (and still is) a very special place to me. I
+                    was able to explore my strengths, develop my leadership skills with
+                    my campers and to understand the importance of collaboration with my
+                    fellow staff and camp directors. Coming from the perspective of
+                    being a camper and then a counselor, I believe that I was able to
+                    have a positive impact on my campers and was able to improve the
+                    overall camp experience for everyone.
+                </p>
+
+                <p>
+                    Ever since I was young, I’ve been drawn to the power of computers
+                    and technology in general. In high school, I took all of the
+                    computer-oriented courses that I could find. I also built my own
+                    custom computer! Whether it was Web Design (HTML/CSS) or Computer
+                    Math (Mathematica) I took them all, and found myself excelling. This
+                    was the breakthrough that sparked my interest in Computer Science.
+                </p>
+            </div>
+        </section>
+        <section class="faq-section">
+            <h1 class="glow">Frequently Asked Questions</h1>
+
+            <h3 class="faq-question">Where do you want to work?</h3>
+            <p class="faq-answer">I’ll really go anywhere for the right role. I have a slight preference for staying in the United States or England though!</p>
+
+            <h3 class="faq-question">Can you actually type 130 wpm?</h3>
+            <p class="faq-answer">Ok… My average is probably closer to 110, but after a good cup of coffee, I can do 130 easily.</p>
+
+            <h4 style="font-style: italic;"> more to be added... </h4>
+        </section>
+
+    </main>
+
+    <footer>&copy; 2024 Alex Trokel. All rights reserved.</footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
